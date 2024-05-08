@@ -2,24 +2,33 @@
 
 :root {
   --text-font: 'Poppins', sans-serif;
-  --background-white: #FCFEFD;
+  --background-white: #fcfefd;
   --text-black: #111715;
   --text-size: 36px;
-  --text-line-height: 1.2em
+  --text-line-height: 1.2em;
+  --horizontal-padding: 300px;
+  --vertical-padding: 100px;
 
   --h2-size: 36px;
   --h2-height: 1.2em;
 
+  /* BUTTON */
+  --link-opacity: 0.7;
   --link-size: 16px;
   --link-weight: 600;
   --link-height: 1em;
-  --link-primary: #FCFEFD;
-  --link-secondary: #111715;
   --link-opacity: 0.7;
+  --link-border-radius: 50px;
 
   /* NAVBAR */
-  --navbar-margin-top: 80px;
-  --navbar-gap: 80px;
+  --navbar-background: #ffffffc7;
+  --navbar-button-color: #111715;
+  --navbar-link-size: 16px;
+  --navbar-link-weight: 600;
+  --navbar-link-height: 1em;
+  --navbar-link-opacity: 0.7;
+  --navbar-link-border-radius: 50px;
+  --navbar-link-padding: 10px 20px;
 }
 
 @media (prefers-color-scheme: dark) {

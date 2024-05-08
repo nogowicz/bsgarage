@@ -31,7 +31,7 @@ export default function CallToActionText() {
   return (
     <div className={styles.container}>
       <div className={styles.text}>
-        Chciałbyś zmienić coś w swoim samochodzie? Zmień podświetlenie! nadaj mu
+        Chciałbyś zmienić coś w swoim samochodzie? Zmień podświetlenie! Nadaj mu
         młodości i ciesz się{' '}
         <span>
           oryginalnością!{' '}

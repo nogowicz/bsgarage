@@ -1,0 +1,250 @@
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.navbar .right img {
+  width: 24px;
+  height: 24px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--horizontal-padding);
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: var(--navbar-background);
+  width: 100%;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.navbar .left a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .right {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .right a {
+  text-decoration: none;
+  color: var(--navbar-button-color);
+  font-size: var(--navbar-link-size);
+  font-weight: var(--navbar-link-weight);
+  line-height: var(--navbar-link-height);
+  border-radius: var(--navbar-link-border-radius);
+  transition: all 0.15s ease;
+}
+
+.navbar .reversed_link a {
+  color: var(--background-white);
+  background-color: var(--navbar-button-color);
+  padding: var(--navbar-link-padding);
+}
+
+.navbar .right a:hover {
+  opacity: var(--navbar-link-opacity);
+}
+
+.navbar .hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .hamburger:hover {
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  background-color: var(--navbar-button-color);
+  height: 4px;
+  width: 36px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.mobileNav {
+  background-color: var(--navbar-background);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 102.391px;
+  right: 0;
+  z-index: 2;
+  padding: 16px;
+}
+
+.mobileNav img {
+  width: 24px;
+  height: 24px;
+  margin: 16px 0;
+}
+
+.mobileNav a {
+  text-decoration: none;
+  margin: 16px 0;
+  text-decoration: none;
+  color: var(--navbar-button-color);
+  font-size: var(--navbar-link-size);
+  font-weight: var(--navbar-link-weight);
+  line-height: var(--navbar-link-height);
+  border-radius: var(--navbar-link-border-radius);
+  transition: all 0.15s ease;
+}
+
+.mobileNav a:hover {
+  text-decoration: underline;
+}
+
+.openDrawer {
+  animation: openDrawerAnimation 0.3s forwards;
+}
+
+.closeDrawer {
+  animation: closeDrawerAnimation 0.3s forwards;
+}
+
+/* DRAWER ANIMATION */
+
+@keyframes openDrawerAnimation {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes closeDrawerAnimation {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(200px);
+  }
+}
+
+/* HAMBURGER ANIMATION */
+
+.animatedBar1 {
+  animation: flipBar1 0.5s forwards;
+}
+
+.animatedBar2 {
+  animation: fadeBar2 0.5s forwards;
+}
+
+.animatedBar3 {
+  animation: flipBar3 0.5s forwards;
+}
+
+@keyframes flipBar1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg) translate(4px, 10px);
+  }
+}
+
+@keyframes fadeBar2 {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+
+@keyframes flipBar3 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-45deg) translate(4px, -10px);
+  }
+}
+
+.reverseAnimatedBar1 {
+  animation: reverseFlipBar1 0.5s forwards;
+}
+
+.reverseAnimatedBar2 {
+  animation: reverseFadeBar2 0.5s forwards;
+}
+
+.reverseAnimatedBar3 {
+  animation: reverseFlipBar3 0.5s forwards;
+}
+
+@keyframes reverseFlipBar1 {
+  from {
+    transform: rotate(45deg) translate(4px, 10px);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes reverseFadeBar2 {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes reverseFlipBar3 {
+  from {
+    transform: rotate(-45deg) translate(4px, -10px);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+/* SCREEN SIZE */
+
+@media only screen and (max-width: 1440px) {
+  .navbar {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .navbar .right {
+    display: none;
+  }
+  .navbar .hamburger {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .mobileNav {
+    display: none;
+  }
+}
