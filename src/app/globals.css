@@ -29,6 +29,7 @@
   --navbar-link-opacity: 0.7;
   --navbar-link-border-radius: 50px;
   --navbar-link-padding: 10px 20px;
+  --navbar-max-height: 100px;
 }
 
 @media (prefers-color-scheme: dark) {
