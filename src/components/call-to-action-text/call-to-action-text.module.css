@@ -1,0 +1,26 @@
+.container {
+  background-color: var(--background-white);
+  padding: 100px 400px;
+}
+
+.container .text {
+  color: var(--text-black);
+  font-size: var(--text-size);
+  line-height: var(--text-line-height);
+  font-weight: 500;
+}
+
+.container .text span {
+  position: relative;
+}
+
+.container .underline {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
