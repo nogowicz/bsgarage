@@ -5,10 +5,11 @@ import React, { useRef, useState } from 'react';
 import styles from './call-to-action-text.module.css';
 import Image from 'next/image';
 
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import LineOne from '@assets/line-1.png';
 import LineTwo from '@assets/line-2.png';
+import Button from '../button/Button';
 
 export default function CallToActionText() {
   const underlineRef = useRef(null);
@@ -61,6 +62,7 @@ export default function CallToActionText() {
           </motion.div>
         </span>
       </div>
+      <Button text="Skontaktuj się ze mną" />
     </div>
   );
 }

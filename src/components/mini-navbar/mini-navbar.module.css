@@ -1,10 +1,10 @@
 .navbar {
   background-color: var(--link-primary);
-  padding: 20px 40px;
+  padding: 10px 40px;
   border-radius: 24px;
   display: flex;
   flex-direction: row;
-  max-height: 65px;
+  height: min-content;
   justify-content: space-between;
   align-items: center;
   gap: var(--navbar-gap);
@@ -24,15 +24,16 @@
   font-size: var(--link-size);
   line-height: var(--link-height);
   padding: 10px 20px;
+  transition: all 0.15s ease;
 }
 
 .navbar li a:hover {
-  opacity: 0.5;
+  opacity: var(--link-opacity);
 }
 
 .navbar .active a {
   color: var(--link-primary);
   background-color: var(--link-secondary);
   border-radius: 12px;
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.15s ease;
 }

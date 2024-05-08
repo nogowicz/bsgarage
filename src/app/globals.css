@@ -15,6 +15,7 @@
   --link-height: 1em;
   --link-primary: #FCFEFD;
   --link-secondary: #111715;
+  --link-opacity: 0.7;
 
   /* NAVBAR */
   --navbar-margin-top: 80px;
