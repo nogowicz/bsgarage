@@ -9,7 +9,7 @@ export default function NavbarLinks() {
   return (
     <>
       <Link href="/">Strona Główna</Link>
-      <Link href="#realizations">Realizacje</Link>
+      <Link href="#projects">Projekty</Link>
       <Link href="#pricing">Cennik</Link>
       <Link href="#about">O mnie</Link>
       <Link href="https://www.instagram.com/b.s_garage/" target="_blank">

@@ -15,41 +15,43 @@ export default function MiniNavbar() {
 
   return (
     <>
-      <header className={styles.navbar}>
-        <div className={styles.left}>
-          <Link href="/">
-            <Image
-              alt="BS Garage Logo"
-              src={Logo.src}
-              width={Logo.width / 10}
-              height={Logo.height / 10}
-            />
-          </Link>
+      <div className={styles.container}>
+        <div className={styles.navbar}>
+          <div className={styles.left}>
+            <Link href="/">
+              <Image
+                alt="BS Garage Logo"
+                src={Logo.src}
+                width={Logo.width / 10}
+                height={Logo.height / 10}
+              />
+            </Link>
+          </div>
+          <nav className={styles.right}>
+            <NavbarLinks />
+          </nav>
+          <div
+            className={styles.hamburger}
+            onClick={() => setActivateNavbar((prev) => !prev)}
+          >
+            <div
+              className={`${styles.bar1} ${
+                activateNavBar ? styles.animatedBar1 : styles.reverseFlipBar1
+              }`}
+            ></div>
+            <div
+              className={`${styles.bar2} ${
+                activateNavBar ? styles.animatedBar2 : styles.reverseFlipBar2
+              }`}
+            ></div>
+            <div
+              className={`${styles.bar3} ${
+                activateNavBar ? styles.animatedBar3 : styles.reverseFlipBar3
+              }`}
+            ></div>
+          </div>
         </div>
-        <nav className={styles.right}>
-          <NavbarLinks />
-        </nav>
-        <div
-          className={styles.hamburger}
-          onClick={() => setActivateNavbar((prev) => !prev)}
-        >
-          <div
-            className={`${styles.bar1} ${
-              activateNavBar ? styles.animatedBar1 : styles.reverseFlipBar1
-            }`}
-          ></div>
-          <div
-            className={`${styles.bar2} ${
-              activateNavBar ? styles.animatedBar2 : styles.reverseFlipBar2
-            }`}
-          ></div>
-          <div
-            className={`${styles.bar3} ${
-              activateNavBar ? styles.animatedBar3 : styles.reverseFlipBar3
-            }`}
-          ></div>
-        </div>
-      </header>
+      </div>
       <SideNavbar activateNavBar={activateNavBar} />
     </>
   );

@@ -9,6 +9,10 @@
   transition: all 0.15s ease;
   width: min-content;
   text-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .blackButton {
@@ -19,4 +23,12 @@
 .button:hover {
   cursor: pointer;
   opacity: var(--link-opacity);
+}
+
+.button .arrow {
+  transition: transform 0.25s ease;
+}
+
+.button:hover .arrow {
+  transform: translateX(4px);
 }

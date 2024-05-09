@@ -1,9 +1,16 @@
 .container {
   background-color: var(--background-white);
-  padding: var(--vertical-padding) var(--horizontal-padding);
+  padding: var(--vertical-padding) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainer {
+  max-width: var(--standard-width);
+  gap: 60px;
   display: flex;
   flex-direction: column;
-  gap: 80px;
 }
 
 .container .text {
@@ -30,6 +37,12 @@
 
 @media only screen and (max-width: 1395px) {
   .container {
-    padding: var(--vertical-padding);
+    padding: var(--vertical-padding) var(--horizontal-padding);
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .container .text {
+    font-size: var(--text-size-xs);
   }
 }
