@@ -1,0 +1,26 @@
+.container {
+  box-shadow: var(--carrousel-item-shadow);
+  border-radius: var(--border-radius);
+  padding: var(--carrousel-item-padding);
+  height: var(--carrousel-item-size);
+  width: var(--carrousel-item-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--carrousel-item-gap);
+}
+
+.container p {
+  color: var(--text-black);
+}
+
+.container .opinion {
+  font-size: var(--text-size-md);
+  font-weight: var(--text-weight);
+}
+
+.container .author {
+  font-size: var(--p-size);
+  color: var(--text-gray);
+}

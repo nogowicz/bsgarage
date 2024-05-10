@@ -6,7 +6,8 @@
   --text-black: #111715;
   --text-gray: #7c7c7c;
   --text-size: 36px;
-  --text-size-xs: 24px;
+  --text-size-md: 24px;
+  --text-weight: 500;
   --text-line-height: 1.2em;
   --horizontal-padding: 40px;
   --vertical-padding: 100px;
@@ -42,39 +43,12 @@
   --navbar-link-border-radius: 50px;
   --navbar-link-padding: 10px 20px;
   --navbar-max-height: 100px;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
+  /* OPINIONS CARROUSEL */
+  --carrousel-item-gap: 50px;
+  --carrousel-item-padding: 20px;
+  --carrousel-item-shadow: 0 35px 60px rgba(0, 0, 0, 0.1);
+  --carrousel-item-size: 400px;
 }
 
 * {

@@ -1,0 +1,38 @@
+[
+  {
+    "src": "/projects/black_bmw.jpg",
+    "alt": "BMW Black",
+    "title": "Detailing wnętrza",
+    "description": "Detailing wnętrza to kompleksowy proces czyszczenia i renowacji wnętrza samochodu, mający na celu przywrócenie mu stanu zbliżonego do nowego. Korzystamy z wysokiej jakości środków do pielęgnacji, aby zadbać o Twój pojazd. Cena za usługę wynosi od 300 do 400 zł, w zależności od stopnia zabrudzenia. Jeśli zdecydujesz się skorzystać z kilku naszych usług, możemy zaoferować zniżkę lub rabat."
+  },
+  {
+    "src": "/projects/bmw_blue_second.jpg",
+    "alt": "BMW Blue",
+    "title": "Odkurzanie, czyszczenie, pranie wnętrza",
+    "description": "Dokładne odkurzanie i pranie wnętrza odświeży Twój samochód i zapewni mu przyjemny zapach. Cena usługi zależy od stopnia zabrudzenia i obejmuje odkurzanie, pranie oraz czyszczenie, w przedziale od 400 do 600 zł. Na przykład, pranie jednego fotela kosztuje 80 zł. Jeśli zdecydujesz się skorzystać z kilku naszych usług, zaoferujemy zniżkę lub rabat."
+  },
+  {
+    "src": "/projects/bmw_indoor_red.jpg",
+    "alt": "BMW indoor red",
+    "title": "Zmiana podświetlenia w serii „F”",
+    "description": "Cena za zmianę całego podświetlenia w seriach \"F\" wynosi od 800 do 1000 zł, w zależności od specyfikacji. Jeśli zdecydujesz się skorzystać z kilku naszych usług, oferujemy zniżki lub rabaty."
+  },
+  {
+    "src": "/projects/blue_cockpit.jpg",
+    "alt": "BMW Blue Cockpit",
+    "title": "Zmiana podświetlenia licznika w serii „F”",
+    "description": "Cena za zmianę podświetlenia licznika w seriach \"F\" wynosi 250 zł. Dodatkowo, jeśli życzysz sobie czerwone wskazówki, koszt wzrośnie o 100 zł."
+  },
+  {
+    "src": "/projects/cockpit_bmw_e90.jpg",
+    "alt": "BMW E90 Cockpit",
+    "title": "Zmiana podświetlenia w serii „E”",
+    "description": "Cena za zmianę całego podświetlenia w seriach \"E\" wynosi od 600 do 850 zł, w zależności od posiadanego wyposażenia. W przypadku skorzystania z kilku naszych usług oferujemy zniżki lub rabaty."
+  },
+  {
+    "src": "/projects/cockpit_bmw_e92.jpg",
+    "alt": "BMW E92 Cockpit",
+    "title": "Licznik high BMW E92",
+    "description": "Cena modyfikacji licznika zaczyna się od 200 zł i może sięgać 300 zł, w zależności od wybranej konfiguracji. Cena za konfigurację przedstawioną na zdjęciu wynosi 300 zł."
+  }
+]

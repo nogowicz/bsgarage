@@ -1,14 +1,14 @@
 'use client';
 
-import Image, { StaticImageData } from 'next/image';
 import React from 'react';
+import Image from 'next/image';
 
 import { motion } from 'framer-motion';
 
 import styles from './project-card.module.css';
 
 interface IProjectCard {
-  src: StaticImageData;
+  src: string;
   alt: string;
   title: string;
   description: string;
@@ -28,7 +28,7 @@ export default function ProjectCard({
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <Image src={src} alt={alt} />
+      <Image src={src} alt={alt} width={1024} height={682} />
       <div className={styles.infoCard}>
         <h3>{title}</h3>
         <p>{description}</p>
