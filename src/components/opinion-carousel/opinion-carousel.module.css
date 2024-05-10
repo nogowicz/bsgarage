@@ -1,5 +1,6 @@
 .scroller {
   max-width: var(--standard-width);
+  padding-bottom: 200px;
 }
 
 .scroller__inner {
