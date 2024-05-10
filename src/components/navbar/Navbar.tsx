@@ -28,7 +28,7 @@ export default function MiniNavbar() {
             </Link>
           </div>
           <nav className={styles.right}>
-            <NavbarLinks />
+            <NavbarLinks setActivateNavbar={setActivateNavbar} />
           </nav>
           <div
             className={styles.hamburger}
@@ -52,7 +52,10 @@ export default function MiniNavbar() {
           </div>
         </div>
       </div>
-      <SideNavbar activateNavBar={activateNavBar} />
+      <SideNavbar
+        activateNavBar={activateNavBar}
+        setActivateNavbar={setActivateNavbar}
+      />
     </>
   );
 }
