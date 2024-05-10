@@ -24,3 +24,19 @@
   font-size: var(--p-size);
   color: var(--text-gray);
 }
+
+@media only screen and (max-width: 900px) {
+  .container {
+    height: var(--carrousel-item-size-sm);
+    width: var(--carrousel-item-size-sm);
+    gap: var(--carrousel-item-gap);
+  }
+
+  .container .opinion {
+    font-size: var(--text-size-sm);
+  }
+
+  .container .author {
+    font-size: var(--p-size-sm);
+  }
+}

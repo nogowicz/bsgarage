@@ -24,6 +24,7 @@ export default function MiniNavbar() {
                 src={Logo.src}
                 width={Logo.width / 10}
                 height={Logo.height / 10}
+                priority
               />
             </Link>
           </div>

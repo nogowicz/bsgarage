@@ -40,7 +40,6 @@ export default function Banner() {
             key={index}
             src={image.src}
             alt={image.alt}
-            fill
             className={`${styles.bannerImage} ${
               index === currentImageIndex ? styles.bannerImageTransition : ''
             }`}
