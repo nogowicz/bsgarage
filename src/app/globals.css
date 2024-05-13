@@ -3,7 +3,9 @@
 :root {
   --text-font: 'Poppins', sans-serif;
   --background-white: #fcfefd;
+  --background-black: #111715;
   --text-black: #111715;
+  --text-white: #fcfefd;
   --text-gray: #7c7c7c;
   --text-size: 36px;
   --text-size-md: 24px;
@@ -14,6 +16,8 @@
   --vertical-padding: 100px;
   --border-radius: 15px;
   --standard-width: 1144px;
+  --spacing-xl: 64px;
+  --regular-gap: 4rem;
 
   --h2-size: 100px;
   --h2-size-md: 64px;
@@ -51,6 +55,9 @@
   --carrousel-item-shadow: 0 35px 60px rgba(0, 0, 0, 0.1);
   --carrousel-item-size: 400px;
   --carrousel-item-size-sm: 250px;
+
+  /* OFFER */
+  --offer-item-padding: 20px;
 }
 
 * {

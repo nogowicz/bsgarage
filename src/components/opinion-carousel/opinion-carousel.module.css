@@ -1,13 +1,13 @@
 .scroller {
   max-width: var(--standard-width);
-  padding-bottom: 200px;
+  /* padding-bottom: 200px; */
 }
 
 .scroller__inner {
   padding-block: 4rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: var(--regular-gap);
 }
 
 .scroller {
@@ -35,7 +35,7 @@
 
 @keyframes scroll {
   to {
-    transform: translate(calc(-50% - 2rem));
+    transform: translate(calc(-50% - var(--regular-gap) / 2));
   }
 }
 

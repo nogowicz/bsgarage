@@ -2,6 +2,7 @@ import styles from './page.module.css';
 import Banner from '@/components/banner/Banner';
 import CallToActionText from '@/components/call-to-action-text/CallToActionText';
 import Navbar from '@/components/navbar/Navbar';
+import OfferSection from '@/components/offer-section/OfferSection';
 import OpinionCarousel from '@/components/opinion-carousel/OpinionCarousel';
 import ProjectsGrid from '@/components/projects-grid/ProjectsGrid';
 
@@ -13,6 +14,7 @@ export default function Home() {
       <CallToActionText />
       <ProjectsGrid />
       <OpinionCarousel />
+      <OfferSection />
     </main>
   );
 }

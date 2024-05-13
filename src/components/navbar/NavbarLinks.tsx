@@ -18,8 +18,8 @@ export default function NavbarLinks({ setActivateNavbar }: INavbarLinks) {
       <Link href="#projects" onClick={() => setActivateNavbar(false)}>
         Projekty
       </Link>
-      <Link href="#pricing" onClick={() => setActivateNavbar(false)}>
-        Cennik
+      <Link href="#offer" onClick={() => setActivateNavbar(false)}>
+        Oferta
       </Link>
       <Link href="#about" onClick={() => setActivateNavbar(false)}>
         O mnie
