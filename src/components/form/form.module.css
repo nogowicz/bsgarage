@@ -1,0 +1,62 @@
+.container form {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container label {
+  display: block;
+  color: var(--text-black);
+  margin-bottom: 5px;
+}
+
+.container input[type='email'],
+.container input[type='text'],
+.container textarea {
+  color: var(--text-black);
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: var(--background-white);
+  border: 2px solid var(--background-black);
+  border-radius: calc(var(--border-radius) / 2);
+  box-sizing: border-box;
+  resize: none;
+  font-size: 18px;
+  font-weight: var(--text-weight);
+}
+
+.container input[type='email'],
+.container input[type='text'] {
+  width: calc(var(--text-area-width-xl) / 2 - 5px);
+}
+
+.container textarea {
+  width: var(--text-area-width-xl);
+  height: 250px;
+}
+
+.container .emailAndSubject {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container button {
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.container input[type='email']:focus,
+.container input[type='text']:focus,
+.container textarea:focus {
+  outline: 4px solid var(--background-black);
+  border: 2px solid transparent;
+}
+
+.container input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px var(--background-white) inset;
+  -webkit-text-fill-color: var(--text-black);
+}

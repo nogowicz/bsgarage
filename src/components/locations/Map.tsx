@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import { motion } from 'framer-motion';
 
-import PolandMap from '../../../public/poland-map-with-bg-second.webp';
+import PolandMap from '../../../public/poland-map-with-bg.webp';
 
 import styles from './locations.module.css';
 

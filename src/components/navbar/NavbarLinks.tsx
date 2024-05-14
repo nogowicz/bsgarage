@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React, { Dispatch, SetStateAction } from 'react';
 
 import { FaInstagram } from 'react-icons/fa';
+import { PiTiktokLogo } from 'react-icons/pi';
 
 import styles from './navbar.module.css';
 
@@ -21,15 +22,19 @@ export default function NavbarLinks({ setActivateNavbar }: INavbarLinks) {
       <Link href="#offer" onClick={() => setActivateNavbar(false)}>
         Oferta
       </Link>
-      <Link href="#about" onClick={() => setActivateNavbar(false)}>
-        O mnie
-      </Link>
       <Link
         href="https://www.instagram.com/b.s_garage/"
         target="_blank"
         onClick={() => setActivateNavbar(false)}
       >
         <FaInstagram size={30} />
+      </Link>
+      <Link
+        href="https://www.tiktok.com/@b.s_garage/"
+        target="_blank"
+        onClick={() => setActivateNavbar(false)}
+      >
+        <PiTiktokLogo size={30} />
       </Link>
       <div
         className={styles.reversed_link}

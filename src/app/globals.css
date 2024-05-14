@@ -19,9 +19,10 @@
   --spacing-xl: 64px;
   --regular-gap: 4rem;
 
-  --h2-size: 100px;
+  --h2-size: 96px;
   --h2-size-md: 64px;
-  --h2-size-xs: 42px;
+  --h2-size-xs: 36px;
+  --h2-size-xxs: 28px;
   --h2-height: 1.2em;
 
   --h3-size: 26px;
@@ -58,6 +59,9 @@
 
   /* OFFER */
   --offer-item-padding: 20px;
+
+  /* CONTACT */
+  --text-area-width-xl: 600px;
 }
 
 * {

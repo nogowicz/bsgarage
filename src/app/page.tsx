@@ -1,6 +1,7 @@
 import styles from './page.module.css';
 import Banner from '@/components/banner/Banner';
 import CallToActionText from '@/components/call-to-action-text/CallToActionText';
+import Contact from '@/components/contact/Contact';
 import Locations from '@/components/locations/Locations';
 import Navbar from '@/components/navbar/Navbar';
 import OfferSection from '@/components/offer-section/OfferSection';
@@ -17,6 +18,7 @@ export default function Home() {
       <ProjectsGrid />
       <OpinionCarousel />
       <OfferSection />
+      <Contact />
     </main>
   );
 }

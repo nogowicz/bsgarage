@@ -1,0 +1,112 @@
+.container {
+  background-color: var(--background-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.innerContainer {
+  max-width: var(--standard-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: calc(var(--vertical-padding) * 2) 0;
+}
+
+.container h2 {
+  color: var(--text-black);
+  font-size: var(--h2-size);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container .innerContainer .content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.innerContainer .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.innerContainer .links div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--regular-gap) / 2);
+}
+
+.innerContainer .links a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: var(--text-weight);
+  font-size: var(--text-size-md);
+  gap: 20px;
+  transition: all 0.25s ease-in;
+  color: var(--text-black);
+}
+
+.innerContainer .links a:hover {
+  opacity: 0.5;
+}
+
+.innerContainer .links img {
+  width: 50px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container .innerContainer {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 973px) {
+  .container h2 {
+    font-size: var(--h2-size-md);
+  }
+
+  .container .links {
+    flex-direction: column;
+    gap: calc(var(--regular-gap) / 2);
+  }
+
+  .container .links div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .innerContainer .links a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .innerContainer .links a {
+    font-size: var(--text-size-sm);
+  }
+  .innerContainer .links {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container h2 {
+    font-size: var(--h2-size-xs);
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .container h2 {
+    font-size: var(--h2-size-xxs);
+  }
+}

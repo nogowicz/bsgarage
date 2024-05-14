@@ -8,7 +8,8 @@ interface IButton {
   withArrow?: boolean;
   isBlack?: boolean;
   text: string;
-  onClick: MouseEventHandler<HTMLButtonElement>;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
+  type?: 'button' | 'submit' | 'reset';
 }
 
 export default function Button({
@@ -16,9 +17,11 @@ export default function Button({
   isBlack = true,
   text,
   onClick,
+  type = 'button',
 }: IButton) {
   return (
     <button
+      type={type}
       className={`${styles.button} ${isBlack ? styles.blackButton : ''}`}
       onClick={onClick}
     >
