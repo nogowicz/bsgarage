@@ -30,7 +30,7 @@
 }
 
 .scroller {
-  --_animation-duration: 20s;
+  --_animation-duration: 30s;
 }
 
 @keyframes scroll {

@@ -1,14 +1,13 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Navbar from '@/components/navbar/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'B.S. Garage',
+  title: 'BS Garage',
   description:
-    'Zmień podświetlenie! nadaj mu młodości i ciesz się oryginalnością!',
+    'Zmień podświetlenie! Nadaj mu młodości i ciesz się oryginalnością!',
 };
 
 export default function RootLayout({
