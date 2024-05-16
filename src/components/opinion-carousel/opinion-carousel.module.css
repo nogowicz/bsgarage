@@ -25,12 +25,12 @@
 .scroller .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
+  animation: scroll var(--_animation-duration, 80s)
     var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller {
-  --_animation-duration: 30s;
+  --_animation-duration: 40s;
 }
 
 @keyframes scroll {

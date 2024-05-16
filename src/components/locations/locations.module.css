@@ -31,7 +31,8 @@
 
 @media only screen and (max-width: 1395px) {
   .container {
-    padding: var(--vertical-padding) var(--horizontal-padding);
+    padding: var(--vertical-padding) var(--horizontal-padding) 0
+      var(--horizontal-padding);
   }
   .innerContainer {
     flex-direction: column;
@@ -39,9 +40,6 @@
   .container .text {
     width: 100%;
   }
-}
-
-@media only screen and (max-width: 1395px) {
   #map {
     position: static;
   }

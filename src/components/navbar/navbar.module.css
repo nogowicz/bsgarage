@@ -91,6 +91,7 @@
   z-index: 2;
   padding: 16px;
   gap: 32px;
+  transform: translateX(1000px);
 }
 
 .mobileNav a {
@@ -117,20 +118,33 @@
   animation: closeDrawerAnimation 0.3s forwards;
 }
 
+.mobileNav.closeDrawer {
+  display: none;
+}
+
+.mobileNav {
+  &.openDrawer {
+    animation: openDrawerAnimation 0.3s forwards;
+  }
+  &.closeDrawer {
+    animation: closeDrawerAnimation 0.3s forwards;
+  }
+}
+
 @keyframes openDrawerAnimation {
-  from {
+  0% {
     transform: translateX(200px);
   }
-  to {
+  100% {
     transform: translateX(0px);
   }
 }
 
 @keyframes closeDrawerAnimation {
-  from {
+  0% {
     transform: translateX(0px);
   }
-  to {
+  100% {
     transform: translateX(200px);
   }
 }

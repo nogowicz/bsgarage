@@ -13,7 +13,7 @@ export default function ProjectsGrid() {
       <div className={styles.innerContainer}>
         <h2>Ostatnie Projekty</h2>
         <div className={styles.grid}>
-          {images.map((image, index) => (
+          {images.slice(0, 6).map((image, index) => (
             <ProjectCard
               key={index}
               src={image.src}

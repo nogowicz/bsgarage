@@ -7,7 +7,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'BS Garage',
   description:
-    'Zmień podświetlenie! Nadaj mu młodości i ciesz się oryginalnością!',
+    'Kompleksowe usługi detailingu wnętrza samochodu, w tym oklejanie, czyszczenie i zmiana podświetlania.',
+  keywords:
+    'usługi detailingu, oklejanie wnętrza samochodu, czyszczenie wnętrza, podświetlanie, Kraków, Przemyśl, Krosno',
 };
 
 export default function RootLayout({
