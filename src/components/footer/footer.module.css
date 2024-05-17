@@ -41,4 +41,5 @@
 
 .innerContainer p {
   font-size: var(--text-size-md);
+  text-align: center;
 }

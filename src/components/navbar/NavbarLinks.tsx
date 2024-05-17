@@ -16,10 +16,10 @@ export default function NavbarLinks({ setActivateNavbar }: INavbarLinks) {
       <Link href="/" onClick={() => setActivateNavbar(false)}>
         Strona Główna
       </Link>
-      <Link href="#projects" onClick={() => setActivateNavbar(false)}>
+      <Link href="/#projects" onClick={() => setActivateNavbar(false)}>
         Projekty
       </Link>
-      <Link href="#offer" onClick={() => setActivateNavbar(false)}>
+      <Link href="/#offer" onClick={() => setActivateNavbar(false)}>
         Oferta
       </Link>
       <Link

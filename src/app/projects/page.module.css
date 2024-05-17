@@ -1,0 +1,97 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-white);
+  margin-bottom: var(--vertical-padding);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .innerContainer {
+  max-width: var(--standard-width);
+  padding: var(--vertical-padding) 0 0 0;
+}
+
+.container h1 {
+  color: var(--text-white);
+  font-size: var(--h1-size);
+  line-height: var(--h1-height);
+  z-index: 2;
+  text-align: center;
+}
+
+.container .bannerContainer {
+  z-index: 0;
+  width: 100%;
+  margin-top: var(--navbar-max-height);
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  padding-top: var(--navbar-margin-top);
+  background-color: var(--background-black);
+  align-items: center;
+}
+
+.container .bannerImage {
+  z-index: 1;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  opacity: 0.6;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 2s ease-in-out;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--regular-gap);
+}
+
+.innerContainer .projectCard {
+  color: var(--text-black);
+  box-shadow: var(--carrousel-item-shadow);
+  border-radius: var(--border-radius);
+  display: flex;
+  transition: 0.5s transform ease;
+}
+
+.innerContainer .projectCard img {
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  flex: 1;
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.innerContainer .projectCard .infoCard {
+  flex: 1;
+  padding: 20px;
+}
+
+.innerContainer .projectCard:hover {
+  transform: translateY(-8px);
+}
+
+@media only screen and (max-width: 973px) {
+  .container h1 {
+    font-size: var(--h1-size-md);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container h1 {
+    font-size: var(--h1-size-xs);
+  }
+}

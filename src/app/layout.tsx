@@ -2,13 +2,17 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/navbar/Navbar';
+import Footer from '@/components/footer/Footer';
+import Contact from '@/components/contact/Contact';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'B.S. Garage',
+  title: 'BS Garage',
   description:
-    'Zmień podświetlenie! nadaj mu młodości i ciesz się oryginalnością!',
+    'Kompleksowe usługi detailingu wnętrza samochodu, w tym oklejanie, czyszczenie i zmiana podświetlania.',
+  keywords:
+    'usługi detailingu, oklejanie wnętrza samochodu, czyszczenie wnętrza, podświetlanie, Kraków, Przemyśl, Krosno',
 };
 
 export default function RootLayout({
@@ -18,7 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+        <Contact />
+        <Footer />
+      </body>
     </html>
   );
 }

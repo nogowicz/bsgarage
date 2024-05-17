@@ -19,6 +19,11 @@
   --spacing-xl: 64px;
   --regular-gap: 4rem;
 
+  --h1-size: 100px;
+  --h1-height: 1.5em;
+  --h1-size-md: 64px;
+  --h1-size-xs: 36px;
+
   --h2-size: 96px;
   --h2-size-md: 64px;
   --h2-size-xs: 36px;
@@ -28,6 +33,9 @@
   --h3-size: 26px;
   --h3-size-sm: 18px;
 
+  --p-size-xl: 24px;
+  --p-size-l: 20px;
+  --p-size-md: 18px;
   --p-size: 15px;
   --p-size-sm: 12px;
 
@@ -49,6 +57,7 @@
   --navbar-link-border-radius: 50px;
   --navbar-link-padding: 10px 20px;
   --navbar-max-height: 100px;
+  --drawer-width: 200px
 
   /* OPINIONS CARROUSEL */
   --carrousel-item-gap: 50px;
