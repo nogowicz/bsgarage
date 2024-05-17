@@ -11,9 +11,10 @@ export default function OfferSection() {
       <div className={styles.innerContainer}>
         <h2>Co oferuję ?</h2>
         <div className={styles.offerContainer}>
-          {offer.map((item, index) => (
+          {offer.map((item) => (
             <OfferCard
-              key={index}
+              key={item.id}
+              id={item.id}
               name={item.name}
               description={item.description}
               price={item.price}

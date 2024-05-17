@@ -16,7 +16,7 @@
   gap: var(--regular-gap);
 }
 
-.container button {
+.container a {
   align-self: flex-end;
 }
 

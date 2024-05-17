@@ -1,5 +1,14 @@
 [
   {
+    "id": 1,
+    "img": {
+      "src": "/banner/bmw_indoor.jpg",
+      "alt": "BMW Indoor",
+      "size": {
+        "width": "2000",
+        "height": "1333"
+      }
+    },
     "name": "Nowe Podświetlenie",
     "price": "250 zł - 1000 zł",
     "description": {
@@ -11,9 +20,28 @@
         "Zmianę podświetlenia różnych elementów: Oferuję zmianę podświetlenia panelu klimatyzacji, radia, przełączników świateł, przycisków na kierownicy czy przycisków od szyb, aby spersonalizować wnętrze samochodu zgodnie z Twoimi potrzebami."
       ],
       "outro": "Zapewniam profesjonalny montaż, precyzyjne wykonanie oraz najwyższą jakość usług. Zapraszam do skorzystania z mojej oferty i cieszenia się wyjątkowym stylem oraz komfortem jazdy!"
+    },
+    "extraInfo": {
+      "detailsTitle": "Cena zmiany podświetlenia uzależniona jest od marki i modelu samochodu:",
+      "details": [
+        "BMW Model E - 600 zł - 850 zł*",
+        "BMW Model F - 800 zł - 1000 zł*",
+        "BMW Model G - 2500 zł - 3000 zł",
+        "Inne modele lub marki samochodów - cena do uzgodnienia"
+      ],
+      "legend": "*Cena uzależniona jest od wyposażenia samochodu."
     }
   },
   {
+    "id": 2,
+    "img": {
+      "src": "/banner/detailing.jpg",
+      "alt": "BMW Indoor Detailing",
+      "size": {
+        "width": "1079",
+        "height": "595"
+      }
+    },
     "name": "Czyszczenie wnętrza pojazdu",
     "price": "400 zł - 600 zł",
     "description": {
@@ -28,6 +56,15 @@
     }
   },
   {
+    "id": 3,
+    "img": {
+      "src": "/banner/before-after.png",
+      "alt": "BMW Indoor",
+      "size": {
+        "width": "1393",
+        "height": "784"
+      }
+    },
     "name": "Oklejanie wnętrza pojazdu",
     "price": "300 zł - 400 zł",
     "description": {
