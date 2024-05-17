@@ -2,7 +2,7 @@
   {
     "id": 1,
     "img": {
-      "src": "/banner/bmw_indoor.jpg",
+      "src": "/banner/bmw_indoor.webp",
       "alt": "BMW Indoor",
       "size": {
         "width": "2000",
@@ -35,7 +35,7 @@
   {
     "id": 2,
     "img": {
-      "src": "/banner/detailing.jpg",
+      "src": "/banner/detailing.webp",
       "alt": "BMW Indoor Detailing",
       "size": {
         "width": "1079",
@@ -58,7 +58,7 @@
   {
     "id": 3,
     "img": {
-      "src": "/banner/before-after.png",
+      "src": "/banner/before-after.webp",
       "alt": "BMW Indoor",
       "size": {
         "width": "1393",

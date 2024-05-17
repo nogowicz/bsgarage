@@ -17,7 +17,6 @@ export default function Home() {
       <Locations />
       <OpinionCarousel />
       <OfferSection />
-      <Contact />
     </main>
   );
 }

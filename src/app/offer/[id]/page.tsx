@@ -51,7 +51,6 @@ export default function Offer({ params }: IOffer) {
           )}
         </div>
       </div>
-      <Contact />
     </main>
   );
 }

@@ -3,12 +3,12 @@ import React, { useEffect, useState } from 'react';
 import styles from './banner.module.css';
 import Image from 'next/image';
 
-import BMW_COCKPIT from '/public/banner/cockpit_bmw.jpg';
-import AIR_CONDITIONING from '/public/banner/air_conditioning.jpg';
-import BMW_BLUE from '/public/banner/bmw_blue.jpg';
-import BMW_INDOOR from '/public/banner/bmw_indoor.jpg';
-import BMW_COCKPIT_E92 from '/public/banner/cockpit_bmw_e92.jpg';
-import INDOOR_DETAILING from '/public/banner/indoor_detailing.jpg';
+import BMW_COCKPIT from '/public/banner/cockpit_bmw.webp';
+import AIR_CONDITIONING from '/public/banner/air_conditioning.webp';
+import BMW_BLUE from '/public/banner/bmw_blue.webp';
+import BMW_INDOOR from '/public/banner/bmw_indoor.webp';
+import BMW_COCKPIT_E92 from '/public/banner/cockpit_bmw_e92.webp';
+import INDOOR_DETAILING from '/public/banner/indoor_detailing.webp';
 
 const images = [
   { src: BMW_BLUE, alt: 'BMW Blue' },
