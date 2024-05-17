@@ -19,6 +19,11 @@
   --spacing-xl: 64px;
   --regular-gap: 4rem;
 
+  --h1-size: 100px;
+  --h1-height: 1.5em;
+  --h1-size-md: 64px;
+  --h1-size-xs: 36px;
+
   --h2-size: 96px;
   --h2-size-md: 64px;
   --h2-size-xs: 36px;
@@ -29,6 +34,8 @@
   --h3-size-sm: 18px;
 
   --p-size-xl: 24px;
+  --p-size-l: 20px;
+  --p-size-md: 18px;
   --p-size: 15px;
   --p-size-sm: 12px;
 

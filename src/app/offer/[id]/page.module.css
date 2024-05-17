@@ -21,8 +21,8 @@
 
 .container h1 {
   color: var(--text-white);
-  font-size: 96px;
-  line-height: 1.2em;
+  font-size: var(--h1-size);
+  line-height: var(--h1-height);
   z-index: 2;
   text-align: center;
 }
@@ -89,4 +89,62 @@
 
 .extraInfo:hover {
   transform: translateY(-8px);
+}
+
+@media only screen and (max-width: 1320px) {
+  .container .innerContainer {
+    padding: var(--vertical-padding) var(--horizontal-padding);
+  }
+
+  .container .innerContainer p {
+    font-size: var(--p-size-l);
+  }
+  .container .innerContainer li {
+    font-size: var(--p-size-l);
+  }
+}
+
+@media only screen and (max-width: 973px) {
+  .container h1 {
+    font-size: var(--h1-size-md);
+  }
+  .container .innerContainer .extraInfo {
+    padding: 40px 20px;
+    margin: 80px 0 0 0;
+  }
+  .container .innerContainer {
+    padding: 40px 20px;
+    margin: 80px 0 40px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container h1 {
+    font-size: var(--h1-size-xs);
+  }
+  .container .innerContainer p {
+    font-size: var(--p-size-l);
+  }
+  .container .innerContainer li {
+    font-size: var(--p-size-l);
+  }
+  .container .innerContainer .extraInfo li {
+    font-size: var(--p-size-l);
+  }
+  #legend {
+    font-size: var(--p-size-sm);
+    align-self: flex-end;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .container .innerContainer p {
+    font-size: var(--p-size-md);
+  }
+  .container .innerContainer li {
+    font-size: var(--p-size-md);
+  }
+  .container .innerContainer .extraInfo li {
+    font-size: var(--p-size);
+  }
 }
