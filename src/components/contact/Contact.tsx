@@ -12,8 +12,8 @@ import PhoneIcon from '@/../public/phone.svg';
 
 export default function Contact() {
   return (
-    <div id="contact" className={styles.container}>
-      <div className={styles.innerContainer}>
+    <div className={styles.container}>
+      <div id="contact" className={styles.innerContainer}>
         <h2>Skontaktuj się ze mną!</h2>
         <div className={styles.content}>
           <div className={styles.links}>

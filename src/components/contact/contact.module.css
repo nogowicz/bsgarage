@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: calc(var(--vertical-padding) * 2) 0;
+  margin: calc(var(--vertical-padding)) 0;
 }
 
 .container h2 {
@@ -24,7 +24,6 @@
 .container .innerContainer .content {
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: space-around;
 }
 
@@ -69,6 +68,12 @@
   }
 }
 
+@media only screen and (min-width: 973px) {
+  .container .content {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 973px) {
   .container h2 {
     font-size: var(--h2-size-md);
@@ -77,6 +82,11 @@
   .container .links {
     flex-direction: column;
     gap: calc(var(--regular-gap) / 2);
+  }
+
+  .container .content {
+    justify-content: center;
+    align-items: center;
   }
 
   .container .links div {
