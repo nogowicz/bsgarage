@@ -28,6 +28,7 @@
   --h2-size-md: 64px;
   --h2-size-xs: 36px;
   --h2-size-xxs: 28px;
+  --h2-size-xxxs: 20px;
   --h2-height: 1.2em;
 
   --h3-size: 26px;
@@ -57,17 +58,17 @@
   --navbar-link-border-radius: 50px;
   --navbar-link-padding: 10px 20px;
   --navbar-max-height: 100px;
-  --drawer-width: 200px
+  --drawer-width: 200px;
+
+  /* OFFER */
+  --offer-item-padding: 20px;
 
   /* OPINIONS CARROUSEL */
-  --carrousel-item-gap: 50px;
+  --carrousel-item-gap: 40px;
   --carrousel-item-padding: 20px;
   --carrousel-item-shadow: 0 35px 60px rgba(0, 0, 0, 0.1);
   --carrousel-item-size: 400px;
   --carrousel-item-size-sm: 250px;
-
-  /* OFFER */
-  --offer-item-padding: 20px;
 
   /* CONTACT */
   --text-area-width-xl: 600px;

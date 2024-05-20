@@ -36,6 +36,7 @@
   }
   .innerContainer {
     flex-direction: column;
+    gap: 0px;
   }
   .container .text {
     width: 100%;

@@ -10,7 +10,7 @@ import ProjectsGrid from '@/components/projects-grid/ProjectsGrid';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1 style={{ color: 'transparent' }}>BS Garage</h1>
+      <h1 style={{ color: 'transparent', position: 'absolute' }}>BS Garage</h1>
       <Banner />
       <CallToActionText />
       <ProjectsGrid />

@@ -7,8 +7,8 @@ import OfferCard from '../offer-card/OfferCard';
 
 export default function OfferSection() {
   return (
-    <div id="offer" className={styles.container}>
-      <div className={styles.innerContainer}>
+    <div className={styles.container}>
+      <div id="offer" className={styles.innerContainer}>
         <h2>Co oferuję ?</h2>
         <div className={styles.offerContainer}>
           {offer.map((item) => (
