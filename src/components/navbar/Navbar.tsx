@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -13,6 +13,15 @@ import NavbarLinks from './NavbarLinks';
 export default function MiniNavbar() {
   const [activateNavBar, setActivateNavbar] = useState(false);
 
+  const toggleNavbar = () => {
+    if (activateNavBar) {
+      setActivateNavbar(false);
+    } else {
+      setActivateNavbar(true);
+    }
+  };
+
+  console.log(activateNavBar);
   return (
     <>
       <div className={styles.container}>
@@ -31,10 +40,7 @@ export default function MiniNavbar() {
           <nav className={styles.right}>
             <NavbarLinks setActivateNavbar={setActivateNavbar} />
           </nav>
-          <div
-            className={styles.hamburger}
-            onClick={() => setActivateNavbar((prev) => !prev)}
-          >
+          <div className={styles.hamburger} onClick={toggleNavbar}>
             <div
               className={`${styles.bar1} ${
                 activateNavBar ? styles.animatedBar1 : styles.reverseFlipBar1

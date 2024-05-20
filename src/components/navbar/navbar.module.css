@@ -101,52 +101,10 @@
   font-weight: var(--navbar-link-weight);
   line-height: var(--navbar-link-height);
   border-radius: var(--navbar-link-border-radius);
-  transition: all 0.15s ease;
 }
 
 .mobileNav a:hover {
   text-decoration: underline;
-}
-
-/* DRAWER ANIMATION */
-
-.openDrawer {
-  animation: openDrawerAnimation 0.3s forwards;
-}
-
-.closeDrawer {
-  animation: closeDrawerAnimation 0.3s forwards;
-}
-
-.mobileNav.closeDrawer {
-  display: none;
-}
-
-.mobileNav {
-  &.openDrawer {
-    animation: openDrawerAnimation 0.3s forwards;
-  }
-  &.closeDrawer {
-    animation: closeDrawerAnimation 0.3s forwards;
-  }
-}
-
-@keyframes openDrawerAnimation {
-  0% {
-    transform: translateX(200px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-
-@keyframes closeDrawerAnimation {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(200px);
-  }
 }
 
 /* HAMBURGER ANIMATION */
