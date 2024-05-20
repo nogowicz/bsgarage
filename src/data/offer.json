@@ -53,16 +53,25 @@
         "Pranie wnętrza: Oferuję skuteczne czyszczenie tapicerki, dywaników oraz innych powierzchni, które zostaną odświeżone i wolne od plam."
       ],
       "outro": "Ponadto świadczę inne usługi związane z detailingiem wnętrza, które podniosą estetykę i komfort jazdy. Zapewniam indywidualne podejście do każdego zlecenia oraz zadowolenie z efektów mojej pracy. Zapraszam do skorzystania z mojej oferty i cieszenia się odnowionym wnętrzem swojego samochodu!"
+    },
+    "extraInfo": {
+      "detailsTitle": "Cena czyszczenia pojazdu uzależniona jest od stopnia zabrudzenia samochodu:",
+      "details": [
+        "Detailing wnętrza - 200 zł - 400 zł*",
+        "Pranie wnętrza - 300 zł - 400 zł*",
+        "Czyszczenie skór - 200 zł - 300 zł*"
+      ],
+      "legend": "*Przy skorzystaniu z więcej niż jednej usługi oferuję atrakcyjne zniżki."
     }
   },
   {
     "id": 3,
     "img": {
-      "src": "/banner/before-after.webp",
-      "alt": "BMW Indoor",
+      "src": "/banner/e90_wrapping.webp",
+      "alt": "BMW Wrapped",
       "size": {
-        "width": "1393",
-        "height": "784"
+        "width": "2000",
+        "height": "1500"
       }
     },
     "name": "Oklejanie wnętrza pojazdu",
@@ -76,6 +85,11 @@
         "Oklejanie boczków drzwi: Udekoruj swoje drzwi okleinami, które będą harmonizować z całością wnętrza, nadając mu spójność i wyjątkowy styl."
       ],
       "outro": "Każde zlecenie realizuję z najwyższą dbałością o szczegóły, aby zapewnić Ci satysfakcję z rezultatów. Zapraszam do skorzystania z mojej oferty i przemienienia wnętrza swojego samochodu w unikalną przestrzeń!"
+    },
+    "extraInfo": {
+      "detailsTitle": "Cena oklejania wnętrza pojazdu uzależniona jest od ilości elementów dekoracyjnych oraz rodzaju folii:",
+      "details": ["Cena oklejania - 300 zł - 500 zł*"],
+      "legend": "*Cena nie obejmuje kosztów folii."
     }
   }
 ]

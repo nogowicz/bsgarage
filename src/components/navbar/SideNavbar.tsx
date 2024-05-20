@@ -1,4 +1,5 @@
-import React, { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import React, { Dispatch, SetStateAction, useRef } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 import NavbarLinks from './NavbarLinks';
 
@@ -14,12 +15,20 @@ export default function SideNavbar({
   setActivateNavbar,
 }: ISideNavbar) {
   return (
-    <nav
-      className={`${styles.mobileNav} ${
-        activateNavBar ? styles.openDrawer : styles.closeDrawer
-      }`}
-    >
-      <NavbarLinks setActivateNavbar={setActivateNavbar} />
-    </nav>
+    <AnimatePresence mode="wait" initial={false}>
+      {activateNavBar && (
+        <motion.nav
+          className={`${styles.mobileNav} `}
+          initial={{ translateX: '200px' }}
+          animate={{ translateX: '0' }}
+          exit={{ translateX: '200px' }}
+          transition={{
+            x: { type: 'spring', bounce: 0 },
+          }}
+        >
+          <NavbarLinks setActivateNavbar={setActivateNavbar} />
+        </motion.nav>
+      )}
+    </AnimatePresence>
   );
 }
