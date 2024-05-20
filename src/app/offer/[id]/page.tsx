@@ -1,10 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 
+import OfferExtraInfo from '@/components/offer-extra-info/OfferExtraInfo';
+
 import styles from './page.module.css';
 
 import offers from '@data/offer.json';
-import Contact from '@/components/contact/Contact';
 
 interface IOffer {
   params: {
@@ -38,17 +39,7 @@ export default function Offer({ params }: IOffer) {
             ))}
           </ul>
           <p>{offer?.description.outro}</p>
-          {offer?.extraInfo && (
-            <div className={styles.extraInfo}>
-              <p>{offer.extraInfo.detailsTitle}</p>
-              <ul>
-                {offer.extraInfo.details.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-              <p id={styles.legend}>{offer.extraInfo.legend}</p>
-            </div>
-          )}
+          {offer?.extraInfo && <OfferExtraInfo extraInfo={offer.extraInfo} />}
         </div>
       </div>
     </main>

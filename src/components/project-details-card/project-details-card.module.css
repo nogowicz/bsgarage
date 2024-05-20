@@ -1,0 +1,36 @@
+.projectCard {
+  color: var(--text-black);
+  box-shadow: var(--carrousel-item-shadow);
+  border-radius: var(--border-radius);
+  display: flex;
+  transition: 0.5s transform ease;
+  margin: 0 40px;
+}
+
+.projectCard img {
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  flex: 1;
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.projectCard .infoCard {
+  flex: 1;
+  padding: 20px;
+}
+
+.projectCard:hover {
+  transform: translateY(-8px);
+}
+
+@media only screen and (max-width: 1220px) {
+  .projectCard {
+    flex-direction: column;
+  }
+  .projectCard img {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    flex: 1;
+    width: 100%;
+  }
+}
