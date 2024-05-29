@@ -9,6 +9,7 @@
   align-items: center;
   flex-direction: column;
   gap: var(--carrousel-item-gap);
+  transition: transform 0.5s;
 }
 
 .container p {
@@ -23,6 +24,10 @@
 .container .author {
   font-size: var(--p-size);
   color: var(--text-gray);
+}
+
+.container:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 900px) {

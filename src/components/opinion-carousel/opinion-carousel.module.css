@@ -1,6 +1,6 @@
 .scroller {
   max-width: var(--standard-width);
-  /* padding-bottom: 200px; */
+  padding-bottom: 20px;
 }
 
 .scroller__inner {
@@ -31,6 +31,10 @@
 
 .scroller {
   --_animation-duration: 40s;
+}
+
+.scroller .scroller__inner:hover {
+  animation-play-state: paused;
 }
 
 @keyframes scroll {

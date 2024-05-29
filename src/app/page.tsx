@@ -1,7 +1,6 @@
 import styles from './page.module.css';
 import Banner from '@/components/banner/Banner';
 import CallToActionText from '@/components/call-to-action-text/CallToActionText';
-import Contact from '@/components/contact/Contact';
 import Locations from '@/components/locations/Locations';
 import OfferSection from '@/components/offer-section/OfferSection';
 import OpinionCarousel from '@/components/opinion-carousel/OpinionCarousel';
