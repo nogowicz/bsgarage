@@ -4,15 +4,32 @@ import './globals.css';
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
 import Contact from '@/components/contact/Contact';
+import CookieConsentBanner from '@/components/cookie-consent-banner/CookieConsentBanner';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
+const info = {
   title: 'BS Garage',
   description:
     'Kompleksowe usługi detailingu wnętrza samochodu, w tym oklejanie, czyszczenie i zmiana podświetlania.',
   keywords:
-    'usługi detailingu, oklejanie wnętrza samochodu, czyszczenie wnętrza, podświetlanie, Kraków, Przemyśl, Krosno',
+    'bs garage, bsgarage, detialing, , samochód, sprzątanie samochodu, usługi detailingu, oklejanie wnętrza samochodu, czyszczenie wnętrza, podświetlanie, Kraków, Przemyśl, Krosno',
+  images: ['/banner/open-graph.webp'],
+};
+
+export const metadata: Metadata = {
+  title: info.title,
+  description: info.description,
+  openGraph: {
+    title: info.title,
+    description: info.description,
+    images: info.images,
+  },
+  twitter: {
+    title: info.title,
+    description: info.description,
+    images: info.images,
+  },
 };
 
 export default function RootLayout({
@@ -27,6 +44,7 @@ export default function RootLayout({
         {children}
         <Contact />
         <Footer />
+        <CookieConsentBanner />
       </body>
     </html>
   );
