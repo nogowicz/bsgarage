@@ -50,7 +50,7 @@ export default function RootLayout({
         {children}
         <Contact />
         <Footer />
-        <CookieConsentBanner />
+        {/* <CookieConsentBanner /> */}
       </body>
     </html>
   );
