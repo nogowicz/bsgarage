@@ -14,8 +14,10 @@ const info = {
     'Kompleksowe usługi detailingu wnętrza samochodu, w tym oklejanie, czyszczenie i zmiana podświetlania.',
   keywords:
     'bs garage, bsgarage, detialing, , samochód, sprzątanie samochodu, usługi detailingu, oklejanie wnętrza samochodu, czyszczenie wnętrza, podświetlanie, Kraków, Przemyśl, Krosno',
-  images: ['/banner/open-graph.webp'],
+  images: ['/banner/open-graph.jpg'],
 };
+
+const metadataBase = new URL('https://bsgarage.pl');
 
 export const metadata: Metadata = {
   title: info.title,
@@ -23,13 +25,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: info.title,
     description: info.description,
-    images: info.images,
+    images: info.images.map((image) => ({
+      url: new URL(image, metadataBase).toString(),
+    })),
   },
   twitter: {
+    card: 'summary_large_image',
     title: info.title,
     description: info.description,
-    images: info.images,
+    images: info.images.map((image) => new URL(image, metadataBase).toString()),
   },
+  metadataBase,
 };
 
 export default function RootLayout({
