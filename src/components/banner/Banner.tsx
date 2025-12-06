@@ -3,22 +3,13 @@ import React, { useEffect, useState } from 'react';
 import styles from './banner.module.css';
 import Image from 'next/image';
 
-import BMW_COCKPIT from '/public/banner/cockpit_bmw.webp';
-import AIR_CONDITIONING from '/public/banner/air_conditioning.webp';
-import BMW_BLUE from '/public/banner/bmw_blue.webp';
-import BMW_INDOOR from '/public/banner/bmw_indoor.webp';
-import BMW_COCKPIT_E92 from '/public/banner/cockpit_bmw_e92.webp';
-import INDOOR_DETAILING from '/public/banner/indoor_detailing.webp';
-
-import Logo from '@/../public/logo-without-bg-white.png';
-
 const images = [
-  { src: BMW_BLUE, alt: 'BMW Blue' },
-  { src: AIR_CONDITIONING, alt: 'Air Conditioning' },
-  { src: BMW_INDOOR, alt: 'BMW Indoor' },
-  { src: BMW_COCKPIT_E92, alt: 'BMW Cockpit E92' },
-  { src: INDOOR_DETAILING, alt: 'Indoor Detailing' },
-  { src: BMW_COCKPIT, alt: 'BMW Cockpit' },
+  { src: '/banner/bmw_blue.webp', alt: 'BMW Blue' },
+  { src: '/banner/air_conditioning.webp', alt: 'Air Conditioning' },
+  { src: '/banner/bmw_indoor.webp', alt: 'BMW Indoor' },
+  { src: '/banner/cockpit_bmw_e92.webp', alt: 'BMW Cockpit E92' },
+  { src: '/banner/indoor_detailing.webp', alt: 'Indoor Detailing' },
+  { src: '/banner/cockpit_bmw.webp', alt: 'BMW Cockpit' },
 ];
 
 export default function Banner() {
@@ -52,10 +43,10 @@ export default function Banner() {
         </div>
         <div className={styles.textContainer}>
           <Image
-            src={Logo.src}
+            src="/logo-without-bg-white.png"
             alt="Logo BS Garage"
-            width={Logo.width / 2}
-            height={Logo.height / 2}
+            width={200}
+            height={200}
           />
           <h2>
             Zmiana podświetlania oraz kompleksowe usługi detailingu wnętrza

@@ -4,12 +4,6 @@ import Link from 'next/link';
 
 import styles from './contact.module.css';
 
-import FacebookIcon from '@/../public/facebook.svg';
-import InstagramIcon from '@/../public/Instagram.svg';
-import TikTokIcon from '@/../public/tiktok.svg';
-import EmailIcon from '@/../public/email.svg';
-import PhoneIcon from '@/../public/phone.svg';
-
 export default function Contact() {
   return (
     <div className={styles.container}>
@@ -22,11 +16,11 @@ export default function Contact() {
                 href={'mailto:bartekstys8@gmail.com.com?subject=&body='}
                 target="_blank"
               >
-                <Image src={EmailIcon} alt="Email icon" />
+                <Image src="/email.svg" alt="Email icon" width={24} height={24} />
                 <p>bartekstys8@gmail.com</p>
               </Link>
               <Link href={'tel:+48534562152'}>
-                <Image src={PhoneIcon} alt="Phone icon" />
+                <Image src="/phone.svg" alt="Phone icon" width={24} height={24} />
                 <p>+ 48 534 562 152</p>
               </Link>
             </div>
@@ -37,18 +31,18 @@ export default function Contact() {
                 }
                 target="_blank"
               >
-                <Image src={FacebookIcon} alt="Facebook icon" />
+                <Image src="/facebook.svg" alt="Facebook icon" width={24} height={24} />
                 <p>Polub moją stronę na Facebook</p>
               </Link>
               <Link
                 href={'https://www.instagram.com/b.s_garage/'}
                 target="_blank"
               >
-                <Image src={InstagramIcon} alt="Instagram icon" />
+                <Image src="/Instagram.svg" alt="Instagram icon" width={24} height={24} />
                 <p>Zaobserwuj mnie na Instagram</p>
               </Link>
               <Link href={'https://www.tiktok.com/@b.s_garage'} target="_blank">
-                <Image src={TikTokIcon} alt="TikTok icon" />
+                <Image src="/tiktok.svg" alt="TikTok icon" width={24} height={24} />
                 <p>Zaobserwuj mnie na TikTok</p>
               </Link>
             </div>
